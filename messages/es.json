@@ -1,0 +1,59 @@
+{
+  "Sidebar": {
+    "sections": {
+      "main": {
+        "title": "Espacio de trabajo",
+        "dashboard": "Panel de control",
+        "conversations": "Conversaciones",
+        "agent": "Agente AI",
+        "products": "Productos",
+        "orders": "Ordenes",
+        "clients": "Clientes"
+      },
+      "admin": {
+        "title": "Administracion",
+        "reports": "Reportes",
+        "configuration": "Configuracion",
+        "stores": "Tiendas",
+        "help": "Centro de ayuda"
+      }
+    }
+  },
+  "Header": {
+    "sections": {
+      "dashboard": "Panel de control",
+      "conversations": "Conversaciones",
+      "agent": "Agente AI",
+      "products": "Productos",
+      "orders": "Ordenes",
+      "clients": "Clientes",
+      "title": "Administracion",
+      "reports": "Reportes",
+      "configuration": "Configuracion",
+      "stores": "Tiendas",
+      "help": "Centro de ayuda"
+    }
+  },
+  "Dashboard": {
+    "greeting": "Un buen dia para crecer, ",
+    "subtitle": "Así va tu negocio. Tu agente se encarga del resto.",
+    "stats": {
+      "totalSales": {
+        "label": "Ventas totales",
+        "subtitle": "vs el periodo anterior"
+      },
+      "conversations": {
+        "label": "Conversaciones",
+        "subtitle": "vs el periodo anterior"
+      },
+      "rateConvertion": {
+        "label": "Tasa de conversiones",
+        "subtitle": "vs el periodo anterior"
+      },
+      "averageTicket": {
+        "label": "Ticket promedio",
+        "subtitle": "vs el periodo anterior"
+      }
+    }
+  }
+}
