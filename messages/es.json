@@ -54,6 +54,15 @@
         "label": "Ticket promedio",
         "subtitle": "vs el periodo anterior"
       }
+    },
+    "salesSummary": {
+      "title": "Resumen de ventas",
+      "subtitle": "Cada conversacion, una nueva oportunidad",
+      "badges": {
+        "week": "Semana",
+        "month": "Mes",
+        "trimester": "Trimestre"
+      }
     }
   }
 }

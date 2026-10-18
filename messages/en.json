@@ -1,5 +1,59 @@
 {
-  "HomePage": {
-    "title": "Hello world!"
+  "Sidebar": {
+    "sections": {
+      "main": {
+        "title": "Workspace",
+        "dashboard": "Dashboard",
+        "conversations": "Conversations",
+        "agent": "AI Agent",
+        "products": "Products",
+        "orders": "Orders",
+        "clients": "Customers"
+      },
+      "admin": {
+        "title": "Administration",
+        "reports": "Reports",
+        "configuration": "Settings",
+        "stores": "Stores",
+        "help": "Help Center"
+      }
+    }
+  },
+  "Header": {
+    "sections": {
+      "dashboard": "Dashboard",
+      "conversations": "Conversations",
+      "agent": "AI Agent",
+      "products": "Products",
+      "orders": "Orders",
+      "clients": "Customers",
+      "title": "Administration",
+      "reports": "Reports",
+      "configuration": "Settings",
+      "stores": "Stores",
+      "help": "Help Center"
+    }
+  },
+  "Dashboard": {
+    "greeting": "A great day to grow, ",
+    "subtitle": "Here's how your business is doing. Your agent takes care of the rest.",
+    "stats": {
+      "totalSales": {
+        "label": "Total Sales",
+        "subtitle": "vs. previous period"
+      },
+      "conversations": {
+        "label": "Conversations",
+        "subtitle": "vs. previous period"
+      },
+      "rateConvertion": {
+        "label": "Conversion Rate",
+        "subtitle": "vs. previous period"
+      },
+      "averageTicket": {
+        "label": "Average Order Value",
+        "subtitle": "vs. previous period"
+      }
+    }
   }
 }

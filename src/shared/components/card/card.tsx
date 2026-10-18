@@ -2,8 +2,8 @@ import { cn } from "cn";
 import { ReactNode } from "react";
 
 interface Props {
-  children: ReactNode;
-  className: string;
+  children?: ReactNode;
+  className?: string;
 }
 const Card = ({ children, className }: Props) => {
   return (

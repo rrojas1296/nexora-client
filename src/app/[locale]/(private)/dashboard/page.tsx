@@ -1,7 +1,9 @@
 "use client";
+import SalesChart from "@/features/dashboard/components/sales-chart/sales-chart";
 import Card from "@/shared/components/card/card";
 import { cn } from "cn";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 const stats = [
   {
@@ -38,8 +40,26 @@ const stats = [
   },
 ];
 
+const chartBadges: Array<{ label: string; key: ChartBadge }> = [
+  {
+    label: "salesSummary.badges.week",
+    key: "week",
+  },
+  {
+    label: "salesSummary.badges.month",
+    key: "month",
+  },
+  {
+    label: "salesSummary.badges.trimester",
+    key: "trimester",
+  },
+];
+
+type ChartBadge = "week" | "month" | "trimester";
+
 const DashboardPage = () => {
   const t = useTranslations("Dashboard");
+  const [activeBadge, setActiveBadge] = useState<ChartBadge>("week");
   const userName = "Diego";
   return (
     <div className="flex flex-col gap-5">
@@ -67,6 +87,30 @@ const DashboardPage = () => {
           );
         })}
       </div>
+      <Card>
+        <div className="flex justify-between items-start">
+          <div>
+            <p className="text-base text-foreground font-semibold">{t("salesSummary.title")}</p>
+            <p className="text-sm text-muted-foreground mt-1">{t("salesSummary.subtitle")}</p>
+          </div>
+
+          <div className="p-1 rounded-xl bg-background h-9 text-xs">
+            {chartBadges.map((cb) => (
+              <button
+                key={cb.key}
+                onClick={() => setActiveBadge(cb.key)}
+                className={cn(
+                  "px-3 h-full bg-background cursor-pointer rounded-xl",
+                  activeBadge === cb.key && "bg-surface",
+                )}
+              >
+                {t(cb.label)}
+              </button>
+            ))}
+          </div>
+        </div>
+        <SalesChart />
+      </Card>
     </div>
   );
 };
